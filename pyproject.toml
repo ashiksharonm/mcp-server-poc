@@ -1,0 +1,40 @@
+[project]
+name = "mcp-server-poc"
+version = "0.1.0"
+description = "MCP Server POC - Agent Tool Gateway"
+authors = [
+    {name = "User", email = "user@example.com"},
+]
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.6.0",
+    "pydantic-settings>=2.1.0",
+    "httpx>=0.26.0",
+    "tenacity>=8.2.3",
+    "loguru>=0.7.2",
+    "aiosqlite>=0.19.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.5",
+    "pytest-cov>=4.1.0",
+]
+dev = [
+    "ruff>=0.1.14",
+    "black>=24.1.0",
+    "isort>=5.13.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

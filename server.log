@@ -1,0 +1,13 @@
+INFO:     Started server process [33671]
+INFO:     Waiting for application startup.
+2026-01-22 22:33:06 | INFO     | app.main:lifespan:11 - Starting MCP Server POC... | {}
+2026-01-22 22:33:06 | INFO     | app.dependencies:init_db:12 - Initializing database... | {}
+2026-01-22 22:33:06 | INFO     | app.dependencies:init_db:18 - Database initialized. | {}
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55276 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2026-01-22 22:33:09 | INFO     | app.main:lifespan:15 - Shutting down MCP Server POC... | {}
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33671]

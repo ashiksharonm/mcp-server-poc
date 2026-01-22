@@ -1,0 +1,27 @@
+[
+    {
+        "id": "case_001",
+        "prompt": "Find tickets related to payment failure",
+        "expected_tool": "ticket_search",
+        "expected_fields": [
+            "tickets",
+            "Found"
+        ]
+    },
+    {
+        "id": "case_002",
+        "prompt": "Explain what is MCP",
+        "expected_tool": "kb_lookup",
+        "expected_fields": [
+            "Model Context Protocol"
+        ]
+    },
+    {
+        "id": "case_003",
+        "prompt": "Run query: SELECT count(*) FROM tickets",
+        "expected_tool": "db_query",
+        "expected_fields": [
+            "row_count"
+        ]
+    }
+]
